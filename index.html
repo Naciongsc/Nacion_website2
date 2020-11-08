@@ -18,6 +18,12 @@
   <p> <strong>NacionWide</strong> is a tourist dtop located at <strong>obong,dalaguete<strong>
   </p>
   
-  
+  <script>
+    function setUserName() {
+  let myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = 'Mozilla is cool, ' + myName;
+}
+    </script>
 </body>
 </html>
