@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+</head>
+
+  <style>
+html {
+  background-color: #00539F;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+p {
+    color:black;
+    width: 500px;
+  }
+  html {
+  font-size: 10px; 
+  font-family: "Open Sans", sans-serif;
+  }
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;    
+  color:black;
+  text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+}
+      </style>
+      
+  <body>
+      
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div class="w3-container">
+ 
+  
+
+  
+<h2>Welcome to NacionWide</h2>
+    <img src="https://www.stickpng.com/assets/images/5847f407cef1014c0b5e4889.png">
+    <p> <strong>NacionWide</strong> is a tourist stop located at <strong>obong,dalaguete.</strong>
+          </p>
+    
+    <p> <strong>Address:</strong> Obong, Dalaguete, Cebu</p>
+    
+    <p> <strong>For queries:</strong><u> ma.rodelyn.nacion@gmail.com</u></p>
+
+
+
+<p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collecyive future. </p>
+
+<p> Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+
+
+<button>Change user</button>
+
+<script>
+    
+    let myImage = document.querySelector('img');
+
+myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute ('src','https://i.ya-webdesign.com/images/firefox-drawing-4.png');
+    } else {
+      myImage.setAttribute ('src','images/firefox-icon.png');
+    }
+}
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h2');
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  localStorage.setItem('name', myName);
+  myHeading.textContent = 'Welcome to NacionWide, ' + myName;
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.textContent = 'Welcome to NacionWide, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
+}
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  if(!myName || myName === null) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Welcome to NacionWide, ' + myName;
+  }
+}
+
+ </script>
+ 
+   
+</body>
+</html>
