@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+</head>
 
 
+      
+  <body>
+      
 <div class="w3-bar w3-black">
   <a href="#" class="w3-bar-item w3-button">Home</a>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
@@ -14,16 +22,50 @@
 </div>
 
 <div class="w3-container">
-  <h2>Welcome to NacionWide</h2>
-  <p> <strong>NacionWide</strong> is a tourist dtop located at <strong>obong,dalaguete<strong>
-  </p>
+ 
   
-  <script>
-    function setUserName() {
-  let myName = prompt('Please enter your name.');
-  localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
-}
-    </script>
+
+  
+<h2>Welcome to NacionWide</h2>
+
+<svg class=logo height="130" width="800">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="110%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="100" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="25" font-family="Lucida Calligraphy"
+  x="20" y="80">NacionWide</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+
+
+
+
+<p style="background-color:rgba(255, 99, 71, 0.5);"><strong>NacionWide</strong> is a tourist stop located at <strong>obong,dalaguete.</strong>
+<br><br>
+<strong>Address:</strong> Obong, Dalaguete, Cebu
+<br><br>
+<strong>For queries:</strong><a href="https://mail.google.com/mail/u/0/#inbox"> ma.rodelyn.nacion@gmail.com</a>
+</p>
+
+<p class= obong style="background-color:lightblue;">
+  <strong> Tourist Spot:</strong> Obong Spring Dalaguete
+  <br><br>
+  What makes <strong>Obong Spring</strong> a distinct pool is its mix of fresh and salt water. During high tide, the continuous flow of <strong>spring water mixes with sea water</strong>, thus making the water briny. This meek place has gained popularity for a number of years as hundreds of tourists and locals love to stop by and take a plunge into the cold waters. <strong>The spring is surrounded by large rocks, which are often used as diving platforms by swimmers</strong>. 
+  <br><br>There are also <strong>beautiful century-old dalakit trees</strong> beside the pool. Lots of vendors available for snacks and food. Also, the beach is nearby and you can walk there, and there is the Oblong Watchtower, an 18th century ruin built as a watchtower for raiding Moro pirates. This refreshing spring is not a secret, and admission is low, so expect a crowd - but still very fun and everyone is having a great time.
+  <br><br><strong>Credits:</strong> <a href="https://www.tripadvisor.com.ph/Attraction_Review-g1498929-d2323874-Reviews-Obong_Spring-Dalaguete_Cebu_Island_Visayas.html#REVIEWS">Obong Spring</a>
+  </p>
+
+<br><br>
+
+<button>Change user</button>
+
+
+   
 </body>
 </html>
